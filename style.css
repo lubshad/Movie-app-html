@@ -106,7 +106,6 @@
 .tougleBall{
     margin-inline: 2px;
     left: 0px;
-    /* right: 0px; */
     background-color: white;
     width: 18px;
     height: 18px;
@@ -116,17 +115,17 @@
 
 
 .contentContainer{
-    position: fixed;
-    top: 50px;
-    left: 50px;
+    /* position: fixed; */
+    margin-top: 50px;
+    margin-left: 50px;
     height: 100vh;
-    width: 100%;
+    width: calc(100vw-50px);
 }
 
 .featuredMovieSection{
     padding: 50px;
-    width: 100%;
-    min-height: 500px;
+    width: calc(100vw -50px);
+    min-height: 400px;
     background: linear-gradient(to bottom, transparent, rgb(37, 37, 37)), url("img/f-1.jpg");
 }
 
@@ -138,6 +137,8 @@
 .featuredDescription{
     padding-block: 50px;
     width: 500px;
+    color: white;
+    font-size: 18px;
 }
 
 .watchButton{
@@ -151,6 +152,60 @@
     color: white;
 
 
+}
+
+.titleWithMovieCarousal{
+    padding: 20px;
+    
+}
+
+.movieCarousalTitle{
+    padding-block: 20px;
+}
+
+.movieCarousalItem{
+    margin: 10px;
+    position: relative;
+}
+
+.movieCarousalItem:hover .moviePoster{
+    margin-inline: 50px;
+    transform: scale(1.2);
+}
+
+
+.moviePoster{
+    transition: all 500ms ease-in-out;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+.movieDetails{
+    width: 250px;
+    top: 50px;
+    left: 50px;
+    position: absolute;
+    visibility: visible;
+    background-color: grey;
+}
+
+.movieDescription{
+    padding-block: 10px;
+}
+
+
+.movieCarousal{
+    display: flex;
+}
+
+
+.movieTitle{
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
 }
 
 
