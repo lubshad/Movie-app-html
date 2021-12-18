@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sen', sans-serif;
+}
+
+.body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 50px;
+    right: 0px;
+    height: 50px;
+    background-color: white;
+    font-family: 'Sen', sans-serif;
+}
+
+.navbarContainer{
+    display: flex;
+    height: 100%;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0px;
+    width: 50px;
+    height: 100%;
+    background-color: white;
+}
+
+.sidebarContainer{
+    padding-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-menu-icon{
+    padding-block: 20px;
+    font-size: 20px;
+}
+
+.logo-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.menu-container{
+    flex: 5;
+}
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.logo {
+    font-size: 30px;
+    color: #4dbf00;
+}
+
+.menuItems{
+    height: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menuItem{
+    padding-right: 20px;
+}
+
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profileText{
+    padding-inline: 10px;
+}
+
+.tougleButton{
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    margin-inline: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+
+.tougleIcon{
+    color: white;
+}
+
+.tougleBall{
+    margin-inline: 2px;
+    left: 0px;
+    /* right: 0px; */
+    background-color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+.contentContainer{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    height: 100vh;
+    width: 100%;
+}
+
+.featuredMovieSection{
+    padding: 50px;
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(to bottom, transparent, rgb(37, 37, 37)), url("img/f-1.jpg");
+}
+
+.featuredTitleImage{
+    width: 200px;
+    height: 100px;
+}
+
+.featuredDescription{
+    padding-block: 50px;
+    width: 500px;
+}
+
+.watchButton{
+    background-color: green;
+    border-radius: 10px;
+    font-weight: bold;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+
+}
+
+
