@@ -155,8 +155,9 @@
 }
 
 .titleWithMovieCarousal{
+    position: relative;
     padding: 20px;
-    
+    overflow: hidden;
 }
 
 .movieCarousalTitle{
@@ -173,6 +174,10 @@
     transform: scale(1.2);
 }
 
+.movieCarousalItem:hover .movieDetails{
+    opacity : 1;
+}
+
 
 .moviePoster{
     transition: all 500ms ease-in-out;
@@ -184,12 +189,13 @@
 
 
 .movieDetails{
+    transition: all 500ms ease-in-out;
     width: 250px;
     top: 50px;
     left: 50px;
     position: absolute;
-    visibility: visible;
-    background-color: grey;
+    opacity: 0;
+    background-color: rgba(128, 128, 128, 0.705);
 }
 
 .movieDescription{
@@ -199,6 +205,8 @@
 
 .movieCarousal{
     display: flex;
+    transition: all 500ms ease-in-out;
+    transform: translateX(0px);
 }
 
 
@@ -206,6 +214,14 @@
     font-weight: bold;
     font-size: 24px;
     color: white;
+}
+
+.sliderArrow{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    font-size: 100px;
+    color: rgba(128, 128, 128, 0.514);
 }
 
 
