@@ -9,6 +9,7 @@
 }
 
 .navbar{
+    z-index: 999;
     position: fixed;
     top: 0px;
     left: 50px;
@@ -24,6 +25,7 @@
 }
 
 .sidebar{
+    z-index: 998;
     position: fixed;
     top: 0px;
     width: 50px;
@@ -87,6 +89,7 @@
 }
 
 .tougleButton{
+    transition: all 500ms ease-in-out;
     width: 40px;
     height: 20px;
     border-radius: 10px;
@@ -96,6 +99,7 @@
     display: flex;
     justify-content: space-around;
     position: relative;
+    cursor: pointer;
 }
 
 
@@ -105,11 +109,12 @@
 
 .tougleBall{
     margin-inline: 2px;
-    left: 0px;
+    transform: translateX(10px);
     background-color: white;
     width: 18px;
     height: 18px;
     border-radius: 50%;
+    transition: all 500ms ease-in-out;
     position: absolute;
 }
 
@@ -118,7 +123,7 @@
     /* position: fixed; */
     margin-top: 50px;
     margin-left: 50px;
-    height: 100vh;
+    height: 100%;
     width: calc(100vw-50px);
 }
 
@@ -155,6 +160,7 @@
 }
 
 .titleWithMovieCarousal{
+    z-index: 997;
     position: relative;
     padding: 20px;
     overflow: hidden;
@@ -222,6 +228,46 @@
     top: 50%;
     font-size: 100px;
     color: rgba(128, 128, 128, 0.514);
+}
+
+.navbar.active{
+    background-color: black;
+    color: white;
+}
+
+.tougleButton.active{
+    background-color: white;
+}
+
+.tougleIcon.active{
+    color: black;
+}
+
+.tougleBall.active{
+    background-color: black;
+    transform: translateX(-10px);
+}
+
+
+.sidebar.active{
+    background-color: black;
+    color: white;
+}
+
+
+.contentContainer.active{
+    background-color: black;
+}
+
+.movieCarousalTitle.active{
+    color: white;
+}
+
+
+@media screen and (max-width:740px) {
+    .menu-container{
+        display: none;
+    }
 }
 
 
